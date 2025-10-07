@@ -1,0 +1,10 @@
+[package]
+name = "svm"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib"]
+[dependencies]
+pyo3 = { version = "0.18", features = ["extension-module"] }
+ndarray = "0.16.1"
