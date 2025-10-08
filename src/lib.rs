@@ -1,4 +1,7 @@
 mod SVM;
+mod testMain;
+mod ArgMinTest;
+mod TestDI;
 
 use pyo3::prelude::*;
 
