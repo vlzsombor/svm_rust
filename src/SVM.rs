@@ -49,6 +49,10 @@ impl Svm{
     }
 
 
+    fn optimize_test(){
+
+    }
+
     fn objective(x: &Array1<f64>) -> f64 {
         // Example bound transform for x within [0, 2]
         let constrained_x = 2.0 / (1.0 + (-x[0]).exp());

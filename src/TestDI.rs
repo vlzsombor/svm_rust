@@ -9,7 +9,6 @@ impl CryptoService for AesCryptoService {
     fn encrypt(&self, plaintext: &str) -> String {
         format!("encrypted: {}", plaintext)
     }
-
     fn decrypt(&self, ciphertext: &str) -> String {
         ciphertext.replace("encrypted: ", "")
     }
@@ -28,7 +27,6 @@ impl<T: CryptoService> MessageProcessor<T> {
         self.crypto_service.encrypt(input)
     }
 }
-
 #[cfg(test)]
 mod tests {
     use super::*;

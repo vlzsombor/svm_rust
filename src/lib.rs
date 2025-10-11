@@ -2,6 +2,7 @@ mod SVM;
 mod testMain;
 mod ArgMinTest;
 mod TestDI;
+mod GenericParamTest;
 
 use pyo3::prelude::*;
 
